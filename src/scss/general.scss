@@ -1,14 +1,11 @@
 /*-----generals-----*/
 html {
-	font-size: 1rem;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	font-family: sans-serif;
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-	overflow-x: hidden;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 body {
-	font-family: "Manrope-Regular";
+	font-family: "Inter", sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 0.875rem;
@@ -27,59 +24,21 @@ body {
 	position: relative;
 	display: block;
 }
-main {
-	position: relative;
-	z-index: 100;
-	margin-left: auto;
-}
-.navigation {
-	width: 22.5rem;
-	background: #f0f0f0;
-	position: absolute;
-	z-index: 998;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	padding: 2.8125rem;
-	@media (max-width: 1140px) {
-		display: none;
-	}
-}
-.row {
-	display: flex;
-	flex-wrap: wrap;
-}
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding-left: 0.9375rem;
 	padding-right: 0.9375rem;
 }
-.md-hidden {
-	display: none;
-}
-::-webkit-scrollbar {
-	width: 0.375rem;
-	background: #fff;
-}
-::-webkit-scrollbar-thumb {
-	background: #000000;
-	width: 0.375rem;
-	height: 18.75rem;
-	border-radius: 0.9375rem;
-}
-::-webkit-scrollbar-thumb:hover {
-	background-color: #00569f;
-}
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	// transition: 0.3s;
+	transition: 0.3s;
 }
-// :hover {
-// 	transition: 0.3s;
-// }
+:hover {
+	transition: 0.3s;
+}
 *:before,
 *:after {
 	-webkit-box-sizing: border-box;
