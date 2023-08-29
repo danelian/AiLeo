@@ -38,7 +38,7 @@
 :root {
   --white-color: #ffffff;
   --lightGreen-color: #02362A;
-  --darkGreen-color: #02362A;
+  --darkGreen-color: #051D17;
   --peach-color: #D69772;
   --broun-color: #BF894C;
   --vanilla-color: #F0DCC0;
@@ -415,16 +415,83 @@ th {
   top: 0;
   left: 0;
   right: 0;
+  margin-top: -38px;
+  display: flex;
   width: 100%;
-  padding: 2rem;
+  height: 254px;
   background-color: transparent;
   z-index: 500;
   transition: position 10s ease-in, background-color 0.3s ease-in;
 }
-
 .header.active {
   background-color: white;
   border: 0;
+}
+.header-blur {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(5, 29, 23, 0.4);
+  backdrop-filter: blur(8px);
+  z-index: -1;
+}
+.header-menu {
+  position: relative;
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 18px;
+  background: var(--darkGreen-color);
+}
+.header-menu::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 100%;
+  height: 1px;
+  background: var(--brown-color);
+}
+.header-menu::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 100%;
+  height: 1px;
+  background: var(--brown-color);
+}
+.header-menu a {
+  width: 50%;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--peach-color);
+}
+.header-menu a:hover {
+  font-weight: 600;
+}
+.header .logo {
+  width: 254px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
 }
 
 /*-----footer-----*/
