@@ -1,0 +1,14 @@
+.about {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  &__item {
+    .section-link {
+      margin-top: 12px;
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
+}
