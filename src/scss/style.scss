@@ -1,0 +1,25 @@
+/***** FONTS *****/
+@import "fonts";
+
+/***** GENERAL ELEMENTS *****/
+$global-color: #00569F;
+$hoverGlobal-color: #053d6e;
+
+$white-color: #ffffff;
+
+$font-color: #1E1E1E;
+$font-color-light: #959595;
+
+
+/***** BLOCKS GLOBAL *****/
+@import "general";
+@import "blocks/buttons";
+@import "blocks/title";
+
+
+/***** COMPONENTS GLOBAL *****/
+@import "blocks/header";
+@import "blocks/footer";
+
+/***** SECTIONS GLOBAL (Widgets) *****/
+// @import "widgets/about";

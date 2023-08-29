@@ -1,0 +1,21 @@
+/*-----buttons----*/
+.button {
+	&.btn-c {
+				display: inline-flex;				
+				align-items: center;
+				justify-content: center;
+				font-family: "Manrope-Medium";
+				font-weight: 500;
+				font-size: 1rem;
+				line-height: 1;
+				width: 13.75rem;
+				height: 3.4375rem;
+				background: rgba(255, 255, 255, 0.05);
+				color: #ffffff;
+				border: 1px #ffffff solid;
+				&:hover {
+					background: $global-color;
+					border-color: $global-color;
+				}
+			}
+}
