@@ -2,13 +2,21 @@
 @import "fonts";
 
 /***** GENERAL ELEMENTS *****/
-$global-color: #00569F;
-$hoverGlobal-color: #053d6e;
+:root {
+  --white-color: #ffffff;
 
-$white-color: #ffffff;
+  --lightGreen-color: #02362A;
+  --darkGreen-color: #02362A;
 
-$font-color: #1E1E1E;
-$font-color-light: #959595;
+  --peach-color: #D69772;
+  --broun-color: #BF894C;
+
+  --vanilla-color: #F0DCC0;
+
+  --brown-color: #BF894C;
+
+  --lightBlue-color: #C4D7EB;
+}
 
 
 /***** BLOCKS GLOBAL *****/
@@ -22,4 +30,4 @@ $font-color-light: #959595;
 @import "blocks/footer";
 
 /***** SECTIONS GLOBAL (Widgets) *****/
-// @import "widgets/about";
+@import "widgets/hero";
