@@ -1,3 +1,4 @@
+/*----diets-----*/
 .diets {
   h2.section-title {
     margin-bottom: 40px;
@@ -72,6 +73,70 @@
         line-height: 1.2;
         color: var(--peach-color);
       }
+    }
+  }
+}
+
+@include desktop {
+  /*----diets-----*/
+  .diets {
+    &__rests {
+      gap: 28px;
+    }
+  }
+}
+
+@include tablet {
+  /*----diets-----*/
+  .diets {
+    h2.section-title {
+      margin-bottom: 24px;
+    }
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 40px;
+    }
+    &__item {
+      h3 {
+        font-size: 20px;
+      }
+      .section-link {
+        margin-top: 0;
+      }
+    }
+    &__rests {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    &__rest {
+      &-content {
+        padding: 20px 16px;
+        h4 {
+          font-size: 15px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  /*----diets-----*/
+  .diets {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 28px;
+      margin-bottom: 32px;
+    }
+    &__item {
+      h3 {
+        font-size: 18px;
+      }
+    }
+    &__rests {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }
