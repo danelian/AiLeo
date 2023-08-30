@@ -947,7 +947,6 @@ th {
     gap: 20px;
   }
   .clients__list {
-    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
   .clients__item-content {
@@ -978,6 +977,7 @@ th {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+/*----restaurants-----*/
 .restaurants {
   background: var(--darkGreen-color);
 }
@@ -1094,6 +1094,57 @@ th {
   color: var(--vanilla-color);
 }
 
+@media screen and (max-width: 1366px) {
+  /*----restaurants-----*/
+  .restaurants__groups {
+    gap: 28px;
+  }
+  .restaurants__list {
+    gap: 28px;
+  }
+}
+@media screen and (max-width: 992px) {
+  /*----restaurants-----*/
+  .restaurants__container {
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+  }
+  .restaurants__content {
+    width: 100%;
+    margin-bottom: 28px;
+  }
+  .restaurants__img {
+    width: 400px;
+  }
+  .restaurants__groups {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .restaurants__list {
+    gap: 20px;
+  }
+  .restaurants__item-content {
+    padding: 20px 16px;
+  }
+  .restaurants__item-content h4 {
+    font-size: 15px;
+  }
+  .restaurants__item-content p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  /*----restaurants-----*/
+  .restaurants__container {
+    margin-bottom: 32px;
+  }
+  .restaurants__img {
+    width: 100%;
+  }
+  .restaurants__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .diets h2.section-title {
   margin-bottom: 40px;
 }
