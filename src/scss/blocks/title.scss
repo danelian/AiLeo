@@ -13,3 +13,33 @@
 	line-height: 1.2;
 	color: var(--darkGreen-color);
 }
+
+@include desktop {
+	/*-----title----*/
+	.page-title {
+		margin-bottom: 24px;
+		font-size: 40px;
+	}
+	.section-title {
+		margin-bottom: 24px;
+		font-size: 36px;
+		font-weight: 900;
+		line-height: 1.2;
+		color: var(--darkGreen-color);
+	}
+}
+
+@include mobile {
+	/*-----title----*/
+	.page-title {
+		margin-bottom: 24px;
+		font-size: 28px;
+	}
+	.section-title {
+		margin-bottom: 24px;
+		font-size: 36px;
+		font-weight: 900;
+		line-height: 1.2;
+		color: var(--darkGreen-color);
+	}
+}

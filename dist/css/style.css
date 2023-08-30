@@ -448,6 +448,26 @@ th {
   transform: rotate(45deg);
 }
 
+@media screen and (max-width: 1366px) {
+  /*-----buttons----*/
+  .link-main {
+    font-size: 18px;
+  }
+  .link-main .arrow-left,
+.link-main .arrow-right {
+    width: 54px;
+  }
+}
+@media screen and (max-width: 576px) {
+  /*-----buttons----*/
+  .link-main {
+    font-size: 17px;
+  }
+  .link-main .arrow-left,
+.link-main .arrow-right {
+    width: 44px;
+  }
+}
 /*-----title----*/
 .page-title {
   margin-bottom: 24px;
@@ -465,6 +485,34 @@ th {
   color: var(--darkGreen-color);
 }
 
+@media screen and (max-width: 1366px) {
+  /*-----title----*/
+  .page-title {
+    margin-bottom: 24px;
+    font-size: 40px;
+  }
+  .section-title {
+    margin-bottom: 24px;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: var(--darkGreen-color);
+  }
+}
+@media screen and (max-width: 576px) {
+  /*-----title----*/
+  .page-title {
+    margin-bottom: 24px;
+    font-size: 28px;
+  }
+  .section-title {
+    margin-bottom: 24px;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: var(--darkGreen-color);
+  }
+}
 /***** COMPONENTS GLOBAL *****/
 /*----header-----*/
 .header {
@@ -555,7 +603,7 @@ th {
     width: 180px;
   }
 }
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 576px) {
   /*----header-----*/
   .header {
     margin-top: -12px;
@@ -591,6 +639,7 @@ th {
 }
 
 /***** SECTIONS GLOBAL (Widgets) *****/
+/*----hero-----*/
 .hero {
   padding-top: 300px;
   padding-bottom: 120px;
@@ -653,6 +702,45 @@ th {
   margin-top: 80px;
 }
 
+@media screen and (max-width: 1366px) {
+  /*----hero-----*/
+  .hero {
+    padding-top: 220px;
+    padding-bottom: 80px;
+    min-height: 680px;
+  }
+  .hero__content-main {
+    max-width: 680px;
+  }
+  .hero__content-main p {
+    font-size: 20px;
+  }
+  .hero__content-second {
+    padding: 24px;
+    font-size: 15px;
+  }
+  .hero__content .link-main {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 576px) {
+  /*----hero-----*/
+  .hero {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    min-height: 560px;
+  }
+  .hero__content-main {
+    max-width: 100%;
+    padding: 16px;
+  }
+  .hero__content-main p {
+    font-size: 18px;
+  }
+  .hero__content .link-main {
+    margin-top: 40px;
+  }
+}
 .about__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

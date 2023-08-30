@@ -1,3 +1,4 @@
+/*----hero-----*/
 .hero {
   padding-top: 300px;
   padding-bottom: 120px;
@@ -55,6 +56,51 @@
     }
     .link-main {
       margin-top: 80px;
+    }
+  }
+}
+
+@include desktop {
+  /*----hero-----*/
+  .hero {
+    padding-top: 220px;
+    padding-bottom: 80px;
+    min-height: 680px;
+    &__content {
+      &-main {
+        max-width: 680px;
+        p {
+          font-size: 20px;
+        }
+      }
+      &-second {
+        padding: 24px;
+        font-size: 15px;
+      }
+      .link-main {
+        margin-top: 60px;
+      }
+    }
+  }
+}
+
+@include mobile {
+  /*----hero-----*/
+  .hero {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    min-height: 560px;
+    &__content {
+      &-main {
+        max-width: 100%;
+        padding: 16px;
+        p {
+          font-size: 18px;
+        }
+      }
+      .link-main {
+        margin-top: 40px;
+      }
     }
   }
 }
