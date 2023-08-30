@@ -541,6 +541,23 @@ th {
 }
 
 /*-----footer-----*/
+.footer {
+  padding: 28px 0;
+  background: var(--darkGreen-color);
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socials a:not(:last-child) {
+  margin-right: 28px;
+}
+.socials a:hover {
+  transform: scale(1.05);
+}
+
 /***** SECTIONS GLOBAL (Widgets) *****/
 .hero {
   padding-top: 300px;

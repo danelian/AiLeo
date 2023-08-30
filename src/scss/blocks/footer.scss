@@ -1,1 +1,19 @@
 /*-----footer-----*/
+.footer {
+  padding: 28px 0;
+  background: var(--darkGreen-color);
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    &:not(:last-child) {
+      margin-right: 28px;
+    }
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
