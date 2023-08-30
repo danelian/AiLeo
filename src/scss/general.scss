@@ -20,6 +20,27 @@ body {
 section {
 	padding: 80px 0;
 }
+@include desktop {
+	body {
+		font-size: 18px;
+	}
+	section {
+		padding: 60px 0;
+	}
+}
+@include tablet {
+	body {
+		font-size: 17px;
+	}
+	section {
+		padding: 40px 0;
+	}
+}
+@include mobile {
+	body {
+		font-size: 16px;
+	}
+}
 .wrapper {
 	min-height: 100vh;
 	max-width: 100%;

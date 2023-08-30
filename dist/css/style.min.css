@@ -72,6 +72,27 @@ section {
   padding: 80px 0;
 }
 
+@media screen and (max-width: 1366px) {
+  body {
+    font-size: 18px;
+  }
+  section {
+    padding: 60px 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  body {
+    font-size: 17px;
+  }
+  section {
+    padding: 40px 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 16px;
+  }
+}
 .wrapper {
   min-height: 100vh;
   max-width: 100%;
@@ -458,6 +479,22 @@ th {
     width: 54px;
   }
 }
+@media screen and (max-width: 992px) {
+  .section-link {
+    font-size: 14px;
+  }
+  .section-link span:before {
+    bottom: -4px;
+  }
+  .section-link .arrow-left {
+    margin-right: 8px;
+    width: 32px;
+  }
+  .section-link .arrow-right {
+    margin-left: 8px;
+    width: 32px;
+  }
+}
 @media screen and (max-width: 576px) {
   /*-----buttons----*/
   .link-main {
@@ -492,11 +529,8 @@ th {
     font-size: 40px;
   }
   .section-title {
-    margin-bottom: 24px;
-    font-size: 36px;
-    font-weight: 900;
-    line-height: 1.2;
-    color: var(--darkGreen-color);
+    margin-bottom: 16px;
+    font-size: 28px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -506,11 +540,7 @@ th {
     font-size: 28px;
   }
   .section-title {
-    margin-bottom: 24px;
-    font-size: 36px;
-    font-weight: 900;
-    line-height: 1.2;
-    color: var(--darkGreen-color);
+    font-size: 20px;
   }
 }
 /***** COMPONENTS GLOBAL *****/
@@ -741,6 +771,7 @@ th {
     margin-top: 40px;
   }
 }
+/*----about-----*/
 .about__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -752,6 +783,22 @@ th {
   justify-content: flex-end;
 }
 
+@media screen and (max-width: 1366px) {
+  /*----about-----*/
+  .about__list {
+    gap: 32px;
+  }
+  .about__item .section-link {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  /*----about-----*/
+  .about__list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+}
 .clients {
   background: var(--vanilla-color);
 }

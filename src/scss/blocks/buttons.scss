@@ -99,6 +99,25 @@
 	}
 }
 
+@include tablet {
+	.section-link {
+		font-size: 14px;
+		span {
+			&:before{
+				bottom: -4px;
+			}
+		}
+		.arrow-left {
+			margin-right: 8px;
+			width: 32px;
+		}
+		.arrow-right {
+			margin-left: 8px;
+			width: 32px;
+		}
+	}
+}
+
 @include mobile {
 	/*-----buttons----*/
 	.link-main {

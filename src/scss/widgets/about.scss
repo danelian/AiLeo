@@ -1,3 +1,4 @@
+/*----about-----*/
 .about {
   &__list {
     display: grid;
@@ -9,6 +10,30 @@
       margin-top: 12px;
       width: 100%;
       justify-content: flex-end;
+    }
+  }
+}
+
+@include desktop {
+  /*----about-----*/
+  .about {
+    &__list {
+      gap: 32px;
+    }
+    &__item {
+      .section-link {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@include tablet {
+  /*----about-----*/
+  .about {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 24px;
     }
   }
 }
