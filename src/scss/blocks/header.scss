@@ -10,11 +10,6 @@
   height: 254px;
   background-color: transparent;
   z-index: 500;
-  transition: position 10s ease-in, background-color 0.3s ease-in;
-  // &.active {
-  //   background-color: white;
-  //   border: 0;
-  // }
   &-blur {
     content: '';
     position: absolute;
@@ -73,5 +68,39 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
+  }
+}
+
+@include desktop {
+  /*----header-----*/
+  .header {
+    height: 180px;
+    &-menu {
+      padding: 14px 18px;
+      a {
+        width: calc(50% - 100px);
+      }
+    }
+    .logo {
+      width: 180px;
+    }
+  }
+}
+
+@include desktop {
+  /*----header-----*/
+  .header {
+    margin-top: -12px;
+    height: 100px;
+    &-menu {
+      padding: 10px 4px;
+      a {
+        width: calc(50% - 50px);
+        font-size: 13px;
+      }
+    }
+    .logo {
+      width: 100px;
+    }
   }
 }

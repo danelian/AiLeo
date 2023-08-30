@@ -52,6 +52,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -477,7 +478,6 @@ th {
   height: 254px;
   background-color: transparent;
   z-index: 500;
-  transition: position 10s ease-in, background-color 0.3s ease-in;
 }
 .header-blur {
   content: "";
@@ -540,6 +540,38 @@ th {
   z-index: 10;
 }
 
+@media screen and (max-width: 1366px) {
+  /*----header-----*/
+  .header {
+    height: 180px;
+  }
+  .header-menu {
+    padding: 14px 18px;
+  }
+  .header-menu a {
+    width: calc(50% - 100px);
+  }
+  .header .logo {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  /*----header-----*/
+  .header {
+    margin-top: -12px;
+    height: 100px;
+  }
+  .header-menu {
+    padding: 10px 4px;
+  }
+  .header-menu a {
+    width: calc(50% - 50px);
+    font-size: 13px;
+  }
+  .header .logo {
+    width: 100px;
+  }
+}
 /*-----footer-----*/
 .footer {
   padding: 28px 0;

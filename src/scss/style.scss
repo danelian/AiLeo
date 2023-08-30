@@ -18,12 +18,27 @@
   --lightBlue-color: #C4D7EB;
 }
 
+@mixin desktop {
+  @media screen and (max-width: 1366px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+
 
 /***** BLOCKS GLOBAL *****/
 @import "general";
 @import "blocks/buttons";
 @import "blocks/title";
-
 
 /***** COMPONENTS GLOBAL *****/
 @import "blocks/header";
