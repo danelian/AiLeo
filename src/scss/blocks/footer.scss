@@ -17,3 +17,20 @@
     }
   }
 }
+
+@include mobile {
+  /*-----footer-----*/
+  .footer {
+    padding: 20px 0;
+  }
+  .socials {
+    a {
+      &:not(:last-child) {
+        margin-right: 18px;
+      }
+      img {
+        width: 28px;
+      }
+    }
+  }
+}

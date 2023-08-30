@@ -668,6 +668,18 @@ th {
   transform: scale(1.05);
 }
 
+@media screen and (max-width: 576px) {
+  /*-----footer-----*/
+  .footer {
+    padding: 20px 0;
+  }
+  .socials a:not(:last-child) {
+    margin-right: 18px;
+  }
+  .socials a img {
+    width: 28px;
+  }
+}
 /***** SECTIONS GLOBAL (Widgets) *****/
 /*----hero-----*/
 .hero {
@@ -1269,6 +1281,7 @@ th {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+/*----team-----*/
 .team {
   padding: 40px 0;
   background: var(--vanilla-color);
@@ -1339,4 +1352,44 @@ th {
   font-weight: 300;
   line-height: 1.2;
   color: var(--peach-color);
+}
+
+@media screen and (max-width: 1366px) {
+  /*----team-----*/
+  .team__container {
+    gap: 28px;
+  }
+  .team__list {
+    gap: 28px;
+  }
+}
+@media screen and (max-width: 992px) {
+  /*----team-----*/
+  .team__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .team__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .team__item-content {
+    padding: 20px 16px;
+  }
+  .team__item-content h4 {
+    font-size: 15px;
+  }
+  .team__item-content p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  /*----team-----*/
+  .team__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .team__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
