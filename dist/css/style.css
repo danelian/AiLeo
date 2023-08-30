@@ -733,3 +733,119 @@ th {
   height: calc(100% - 16px);
   border: 1px solid var(--brown-color);
 }
+
+.restaurants {
+  background: var(--darkGreen-color);
+}
+.restaurants__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.restaurants .section-title {
+  color: var(--vanilla-color);
+}
+.restaurants__content {
+  color: var(--white-color);
+  width: calc(50% - 20px);
+}
+.restaurants__content a {
+  display: inline-block;
+  text-decoration: underline;
+}
+.restaurants__content a:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.restaurants__content a:hover {
+  text-decoration: none;
+}
+.restaurants__content h3 {
+  font-weight: 700;
+  color: var(--brown-color);
+}
+.restaurants__content p {
+  margin-top: 8px;
+}
+.restaurants__content ul {
+  padding-left: 30px;
+}
+.restaurants__img {
+  width: calc(50% - 20px);
+}
+.restaurants__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.restaurants__groups {
+  display: grid;
+  grid-template-columns: 1fr 3.3fr;
+  gap: 40px;
+}
+.restaurants__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.restaurants__item img {
+  width: 100%;
+  aspect-ratio: 29/20;
+  object-fit: cover;
+}
+.restaurants__item-content {
+  position: relative;
+  padding: 24px 16px;
+  text-align: center;
+  color: var(--darkGreen-color);
+  background: var(--vanilla-color);
+}
+.restaurants__item-content::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  border: 1px solid var(--darkGreen-color);
+}
+.restaurants__item-content h4 {
+  position: relative;
+  padding-bottom: 8px;
+  margin-top: 0;
+  margin-bottom: 8px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: var(--darkGreen-color);
+}
+.restaurants__item-content h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--darkGreen-color);
+}
+.restaurants__item-content p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--lightGreen-color);
+}
+.restaurants .founder-info {
+  color: var(--lightGreen-color);
+  background: var(--vanilla-color);
+}
+.restaurants .founder-info::before {
+  border: 1px solid var(--darkGreen-color);
+}
+.restaurants .section-link {
+  color: var(--vanilla-color);
+}
