@@ -849,3 +849,77 @@ th {
 .restaurants .section-link {
   color: var(--vanilla-color);
 }
+
+.diets h2.section-title {
+  margin-bottom: 40px;
+}
+.diets__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px 40px;
+  margin-bottom: 40px;
+}
+.diets__item h3 {
+  font-size: 24px;
+  font-weight: 900;
+}
+.diets__item .section-link {
+  margin-top: 12px;
+  width: 100%;
+  justify-content: flex-end;
+}
+.diets__rests {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+.diets__rest img {
+  width: 100%;
+  aspect-ratio: 29/20;
+  object-fit: cover;
+}
+.diets__rest-content {
+  position: relative;
+  padding: 24px 16px;
+  text-align: center;
+  color: var(--vanilla-color);
+  background: var(--darkGreen-color);
+}
+.diets__rest-content::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  border: 1px solid var(--brown-color);
+}
+.diets__rest-content h4 {
+  position: relative;
+  padding-bottom: 8px;
+  margin-top: 0;
+  margin-bottom: 8px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: var(--vanilla-color);
+}
+.diets__rest-content h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--brown-color);
+}
+.diets__rest-content p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--peach-color);
+}
